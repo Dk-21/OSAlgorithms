@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <ScrollView
+        android:background="@android:color/white"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".semaphore.ParamsForSemaphore">
+
+        <TextView
+            android:id="@+id/hardcoded_text_1"
+            android:text="@string/semaphore_lock_implementation"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center_horizontal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/hardcoded_text_2"
+            android:layout_marginTop="32dp"
+            android:text="@string/enter_1st_process_name"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@id/linear_layout_number_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/process1_edit_text"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_below="@+id/hardcoded_text_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:inputType=""
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/hardcoded_text_3"
+            android:layout_marginTop="32dp"
+            android:text="@string/enter_2nd_process_name"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@id/process1_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/process2_edit_text"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_below="@+id/hardcoded_text_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:inputType=""
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/hardcoded_text_4"
+            android:layout_marginTop="64dp"
+            android:text="@string/enter_count_for_prcess_1_and_2_respectively"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/hardcoded_text_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/hardcoded_text_4"
+            android:orientation="horizontal"
+            android:id="@+id/linear_layout_number_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <NumberPicker
+                android:id="@+id/number_picker_process1"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <NumberPicker
+                android:id="@+id/number_picker_process2"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/proceed_button"
+            android:layout_marginTop="64dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/proceed"
+            android:background="@color/colorPrimary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/white"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/process2_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    </ScrollView>
+</layout>

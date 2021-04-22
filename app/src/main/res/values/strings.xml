@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">OS Algorithms</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="banker_s_algorithm">Banker\'s Algorithm</string>
+    <string name="choose_number_of_processes_and_resources">Choose Number of processes and resources</string>
+    <string name="enter_allocation_matrix">Enter Allocation Matrix:</string>
+    <string name="enter_max_matrix">Enter Max. Matrix</string>
+    <string name="enter_available_matrix">Enter Available Matrix</string>
+    <string name="proceed">PROCEED</string>
+    <string name="semaphore_lock_implementation">Semaphore - lock Implementation</string>
+    <string name="enter_1st_process_name">Enter 1st process name (A or B)</string>
+    <string name="enter_2nd_process_name">Enter 2nd process name (A or B)</string>
+    <string name="enter_count_for_prcess_1_and_2_respectively">Enter Count for Prcess 1 and 2 respectively</string>
+    <string name="enter_process_id_for_the_first_process">Enter Process ID (0 or 1) for the first process:</string>
+    <string name="enter_process_id_for_the_second_process">Enter Process ID (0 or 1) for the second process</string>
+    <string name="peterson_algorithm">Peterson Algorithm</string>
+</resources>

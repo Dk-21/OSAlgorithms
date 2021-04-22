@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/algorithmChooserFragment">
+
+    <fragment
+        android:id="@+id/algorithmChooserFragment"
+        android:name="com.savage9ishere.osalgorithms.algorithmChooser.AlgorithmChooserFragment"
+        android:label="fragment_algorithm_chooser"
+        tools:layout="@layout/fragment_algorithm_chooser" >
+        <action
+            android:id="@+id/action_algorithmChooserFragment_to_algorithmParameterFragment"
+            app:destination="@id/algorithmParameterFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_algorithmChooserFragment_to_paramsForSemaphore"
+            app:destination="@id/paramsForSemaphore"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_algorithmChooserFragment_to_paramsForPeterson"
+            app:destination="@id/paramsForPeterson"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_algorithmChooserFragment_to_paramsForProducerConsumer"
+            app:destination="@id/paramsForProducerConsumer"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_algorithmChooserFragment_to_paramsForDekkerAlgorithmFragment"
+            app:destination="@id/paramsForDekkerAlgorithmFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_algorithmChooserFragment_to_paramsForTestAndSetLock"
+            app:destination="@id/paramsForTestAndSetLock"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/algorithmParameterFragment"
+        android:name="com.savage9ishere.osalgorithms.bankersAlgo.AlgorithmParametersForBankersAlgoFragment"
+        android:label="AlgorithmParameterFragment"
+        tools:layout="@layout/fragment_algorithm_parameters_for_bankers_algo">
+        <action
+            android:id="@+id/action_algorithmParameterFragment_to_bankersAlgorithmFragment"
+            app:destination="@id/bankersAlgorithmFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/algorithmParameterFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/bankersAlgorithmFragment"
+        android:name="com.savage9ishere.osalgorithms.bankersAlgo.BankersAlgorithmFragment"
+        android:label="fragment_bankers_algorithm"
+        tools:layout="@layout/fragment_bankers_algorithm" />
+    <fragment
+        android:id="@+id/paramsForSemaphore"
+        android:name="com.savage9ishere.osalgorithms.semaphore.ParamsForSemaphore"
+        android:label="ParamsForSemaphore"
+        tools:layout="@layout/fragment_params_for_semaphore">
+        <action
+            android:id="@+id/action_paramsForSemaphore_to_semaphoreAlgorithmFragment"
+            app:destination="@id/semaphoreAlgorithmFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/paramsForSemaphore"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/semaphoreAlgorithmFragment"
+        android:name="com.savage9ishere.osalgorithms.semaphore.SemaphoreAlgorithmFragment"
+        android:label="fragment_semaphore_algorithm"
+        tools:layout="@layout/fragment_semaphore_algorithm" />
+    <fragment
+        android:id="@+id/paramsForPeterson"
+        android:name="com.savage9ishere.osalgorithms.petersonAlgo.ParamsForPeterson"
+        android:label="ParamsForPeterson" >
+        <action
+            android:id="@+id/action_paramsForPeterson_to_petersonAlgoFragment"
+            app:destination="@id/petersonAlgoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/paramsForPeterson"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/petersonAlgoFragment"
+        android:name="com.savage9ishere.osalgorithms.petersonAlgo.PetersonAlgoFragment"
+        android:label="fragment_peterson_algo"
+        tools:layout="@layout/fragment_peterson_algo" />
+    <fragment
+        android:id="@+id/paramsForProducerConsumer"
+        android:name="com.savage9ishere.osalgorithms.ProducerConsumerProblem.ParamsForProducerConsumer"
+        android:label="fragment_params_for_producer_consumer"
+        tools:layout="@layout/fragment_params_for_producer_consumer" >
+        <action
+            android:id="@+id/action_paramsForProducerConsumer_to_producerConsumerFragment"
+            app:destination="@id/producerConsumerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/paramsForProducerConsumer"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/producerConsumerFragment"
+        android:name="com.savage9ishere.osalgorithms.ProducerConsumerProblem.ProducerConsumerFragment"
+        android:label="fragment_producer_consumer"
+        tools:layout="@layout/fragment_producer_consumer" />
+    <fragment
+        android:id="@+id/paramsForDekkerAlgorithmFragment"
+        android:name="com.savage9ishere.osalgorithms.dekkerAlgorithm.ParamsForDekkerAlgorithmFragment"
+        android:label="fragment_params_for_dekker_algorithm"
+        tools:layout="@layout/fragment_params_for_dekker_algorithm" >
+        <action
+            android:id="@+id/action_paramsForDekkerAlgorithmFragment_to_dekkerAlgorithmFragment"
+            app:destination="@id/dekkerAlgorithmFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/paramsForDekkerAlgorithmFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/dekkerAlgorithmFragment"
+        android:name="com.savage9ishere.osalgorithms.dekkerAlgorithm.DekkerAlgorithmFragment"
+        android:label="fragment_dekker_algorithm"
+        tools:layout="@layout/fragment_dekker_algorithm" />
+    <fragment
+        android:id="@+id/paramsForTestAndSetLock"
+        android:name="com.savage9ishere.osalgorithms.testAndSetLock.ParamsForTestAndSetLock"
+        android:label="fragment_params_for_test_and_set_lock"
+        tools:layout="@layout/fragment_params_for_test_and_set_lock" >
+        <action
+            android:id="@+id/action_paramsForTestAndSetLock_to_testAndSetLockAlgorithmFragment"
+            app:destination="@id/testAndSetLockAlgorithmFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/paramsForTestAndSetLock"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/testAndSetLockAlgorithmFragment"
+        android:name="com.savage9ishere.osalgorithms.testAndSetLock.TestAndSetLockAlgorithmFragment"
+        android:label="fragment_test_and_set_lock_algorithm"
+        tools:layout="@layout/fragment_test_and_set_lock_algorithm" />
+</navigation>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/algoNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:text="Semaphore Algorithm" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/algoNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+        <TextView
+            android:id="@+id/longDescriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget ultricies mauris. Nulla ornare ligula lectus, quis volutpat ante feugiat pharetra. Fusce in mauris lacus. Quisque tempor ut massa tristique euismod. Ut scelerisque eros ut malesuada volutpat. Sed molestie sagittis massa, id dictum nibh luctus vel. Cras odio lacus, faucibus sed massa quis, tristique accumsan mauris. Nunc dolor mi, convallis eget ultricies nec, iaculis eu nunc. Phasellus ornare felis id consequat sodales. Aenean a blandit urna. Integer tristique auctor ullamcorper.
+Cras lacus tortor, tincidunt ac lorem ac, aliquet auctor nisl. In ante libero, vulputate eget interdum vel, vulputate eget lectus. Duis elit elit, vestibulum quis leo sed, porta iaculis massa. Fusce a nisl venenatis augue hendrerit volutpat. Suspendisse eget venenatis quam. Aliquam elementum purus enim, eu tempor urna molestie a. Curabitur faucibus ligula sem, eget fringilla quam gravida eget. Morbi ut porta dui. Ut efficitur, quam a venenatis tempor, est tortor tempus est, et dictum nisi ante in erat. Sed laoreet nisi eget tortor maximus, ac vulputate metus semper. Integer fermentum at elit a tempor. Donec vestibulum, nunc ut mollis hendrerit, ligula nisl convallis turpis, non varius dui justo et nisi.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget ultricies mauris. Nulla ornare ligula lectus, quis volutpat ante feugiat pharetra. Fusce in mauris lacus. Quisque tempor ut massa tristique euismod. Ut scelerisque eros ut malesuada volutpat. Sed molestie sagittis massa, id dictum nibh luctus vel. Cras odio lacus, faucibus sed massa quis, tristique accumsan mauris. Nunc dolor mi, convallis eget ultricies nec, iaculis eu nunc. Phasellus ornare felis id consequat sodales. Aenean a blandit urna. Integer tristique auctor ullamcorper.
+Cras lacus tortor, tincidu
+" />
+
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/close_text_view"
+        android:layout_below="@id/scrollView"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="CLOSE" />
+
+</RelativeLayout>
