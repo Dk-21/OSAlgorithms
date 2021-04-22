@@ -1,7 +1,7 @@
 # OSAlgorithms
 
 OS Algorithm : Deadlock and concurrency 
-Here i have developed an app as an 5th sem project for opersating systems subject which includes the topic Deadlock and concurrency with all the information.
+Here i have developed an app as an 5th sem project for operating systems subject which includes the topic Deadlock and concurrency with all the information.
 
 ## Here are the working Screenshots of the App
 ![Screenshot_1607437821](https://user-images.githubusercontent.com/78248369/115674489-52bedb80-a36b-11eb-9baa-581089424f33.png)
